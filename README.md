@@ -1,0 +1,1 @@
+# MP2023-24_Fucikova-Karolina_Analyza-poskytovatelu-mapovych-sluzeb-a-redesign-webu-Smart-Address
