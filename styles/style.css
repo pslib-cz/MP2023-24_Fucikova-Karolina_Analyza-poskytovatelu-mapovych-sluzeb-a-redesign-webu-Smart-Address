@@ -1,0 +1,280 @@
+:root {
+    --darkblue: #140939;
+    --lightblue: #f8f6fe;
+    --gray-text: #b4b4b4;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: var(--darkblue);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+}
+
+
+.logo {
+    width: 30px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.logo__text {
+    color: white;
+    font-size: 20px;
+}
+
+.address__search {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+.address__search--box {
+    margin: 1em .5em;
+
+}
+
+.address__search--heading {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.address__search--text {
+    max-width: 370px;
+    font-size: 16px;
+}
+
+.search-box {
+    /*display: block;*/
+    background-color: var(--lightblue);
+    border-radius: 30px;
+    padding: 25px;
+    width: 100%;
+
+}
+
+.search-box--input {
+    background-color: white;
+    border: 1px solid var(--darkblue);
+    border-radius: 8px;
+    color: var(--gray-text);
+    padding: 1em;
+    max-width: 450px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.search-box--search {
+    display: flex;
+    justify-content: center;
+}
+
+.search__span {
+    background-color: var(--darkblue);
+    color: white;
+    width: fit-content;
+    padding: 1em;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.search-box--search:hover {
+    color: var(--lightblue);
+}
+
+
+.advantages {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.advantages--heading {
+    margin: 2em .75em;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.advantages__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: .5em;
+    gap: 60px;
+}
+
+.advantages__block {
+    background-color: var(--lightblue);
+    text-align: center;
+    padding: 28px 16px;
+    border-radius: 8px;
+    max-width: 380px;
+}
+
+.advantages__block--img {
+    object-fit: cover;
+}
+
+.advantages__block--text {
+    color: var(--darkblue);
+    margin: 0;
+    padding-top: 16px;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkblue);
+}
+
+.footer__wrapper {
+    padding: 20px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 60px;
+}
+
+.footer__contact--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.footer__block {
+    display: block;
+    color: white;
+    /*margin-bottom: 60px;*/
+}
+
+.footer__block--text {
+    margin-top: 32px;
+}
+
+.footer__icon {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.footer__link {
+    color: white;
+    display: block;
+    margin: 16px 0;
+}
+
+.footer__line {
+    display: flex;
+    border: .5px solid white;
+    margin: 0 1em;
+}
+
+.footer__copy--text {
+    color: white;
+    text-align: center;
+    padding: 2em;
+    margin: 0;
+}
+
+@media screen and (min-width: 400px) {
+    .search-box {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .address__search {
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+
+    .header__logo {
+        margin: auto 8em;
+    }
+
+    .address__search {
+        margin: 2em 8em;
+    }
+
+    .address__search--heading {
+        font-size: 32px;
+    }
+
+    .address__search--text {
+        font-size: 20px;
+    }
+
+    .search-box {
+        max-width: 480px;
+        justify-content: center;
+    }
+
+    .advantages {
+        margin: 6em auto;
+    }
+
+    .advantages__wrapper {
+        margin: auto 8em;
+    }
+
+    .advantages--heading {
+        font-size: 28px;
+    }
+
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 2em 8em;
+    }
+
+    .footer__line {
+        margin: auto 8em;
+    }
+}
+
+@media screen and (min-width: 1435px) {
+
+
+    .header__logo {
+        margin: auto 12em;
+    }
+
+    .footer__wrapper {
+        margin: 2em 12em;
+    }
+
+    .footer__line {
+        margin: auto 12em;
+    }
+
+
+}
